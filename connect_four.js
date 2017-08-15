@@ -85,12 +85,13 @@ function DiagonalWinCheck() {
 }
 
 
+
 function gameEnd(winningPlayer) {
   for (var col = 0; col < 7; col++) {
     for (var row = 0; row < 7; row++) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('h1').html(<br>winningPlayer + ' has won!</br>Refresh your browser to play again,<br>or</br>go back to Landing page.');
+      $('h1').html(winningPlayer + ' has won! Refresh your browser to play again,<br>or</br>to go back to Landing page.');
     }
   }
 };
