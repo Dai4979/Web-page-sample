@@ -6,10 +6,7 @@ var player2Color = 'rgb(237, 45, 73)';
 var gameOn = true;
 var table = $("table tr")
 
-// $('#one').text(player1+': it is your turn, please pick a column to drop your blue chip.')
-// $('two').text(player2+': it is your turn, please pick a column to drop your blue chip.')
 
-// Not necessary
 function reportWin(rowNum, colNum) {
   console.log("You won starting at this row, col");
   console.log(rowNum);
@@ -96,7 +93,7 @@ function gameEnd(winningPlayer) {
     for (var row = 0; row < 7; row++) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('h1').html(winningPlayer + ' has won! Refresh your browser to play again,<br>or</br>to go back to Landing page.');
+      $('h1').html(<br>winningPlayer + ' has won!</br>Refresh your browser to play again,<br>or</br>go back to Landing page.');
     }
   }
 };
