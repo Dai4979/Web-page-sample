@@ -84,9 +84,6 @@ function DiagonalWinCheck() {
   }
 }
 
-// function return(){
-//   history.back();
-// };
 
 function gameEnd(winningPlayer) {
   for (var col = 0; col < 7; col++) {
